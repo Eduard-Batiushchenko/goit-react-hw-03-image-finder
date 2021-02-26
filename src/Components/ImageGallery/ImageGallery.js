@@ -1,5 +1,6 @@
 import React from 'react';
-import ImageGalleryItem from '../Components/ImageGalleryItem/ImageGalleryItem';
+import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
+import PropTypes from 'prop-types';
 import './_ImageGallery.scss';
 
 const ImageGallery = ({ gallery, handleImage }) => {
@@ -12,6 +13,10 @@ const ImageGallery = ({ gallery, handleImage }) => {
       })}
     </ul>
   );
+};
+ImageGallery.propTypes = {
+  handleImage: PropTypes.func.isRequired,
+  gallery: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default ImageGallery;

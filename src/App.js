@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from './Components/Button/Button';
 import Modal from './Components/Modal/Modal';
 import Searchbar from './Components/Searchbar/Searchbar';
-import ImageGallery from './ImageGallery/ImageGallery';
+import ImageGallery from './Components/ImageGallery/ImageGallery';
 import { fetchGallery } from './services/pixabay-api';
 import Loader from 'react-loader-spinner';
 import './_App.scss';
